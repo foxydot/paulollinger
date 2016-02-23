@@ -1,0 +1,224 @@
+.site-header{
+  .wrap{
+    position: relative;
+  }
+  .header-widget-area{
+    position: absolute;
+    right: 0;
+  }
+  .connected-text{
+    float: right;
+    a.food-btn{
+      max-width: 60px;
+      background-color: @green;
+      color: @white;
+      text-align: center;
+      display: block;
+      padding: 0.75em 0.5em;
+      margin: 1em 0;
+      &:hover{
+        background-color: darken(@green, 10%);
+        color: @white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.connected-social{
+  .social-media{
+    float: right;
+    a.fa{
+      background: @dkgrey;
+      color: @white;
+      height: 3rem;
+      width: 3rem;
+      margin: 0.4rem;
+      line-height: 1.5;
+      font-size: 2rem;
+      border-radius: 8px;
+      &:before{
+        opacity: 1;
+      }
+    }
+    a.fa:hover{
+    }
+    a.fa.last-child{
+      margin-right: 0;
+    }
+        
+     a.fa-facebook:hover{
+       background-color:@facebook;
+     }
+     a.fa-twitter:hover{
+       background-color:@twitter;
+     }
+     a.fa-pinterest:hover{
+       background-color:@pinterest;
+     }
+     a.fa-google-plus:hover{
+       background-color:@google;
+     }
+     a.fa-linkedin:hover{
+       background-color:@linkedin;
+     }
+     a.fa-instagram:hover{
+       background-color:@instagram;
+     }
+     a.fa-tumblr:hover{
+       background-color:@tumblr;
+     }
+     a.fa-reddit:hover{
+       background-color:@reddit;
+     }
+     a.fa-flickr:hover{
+       background-color:@flickr;
+     }
+     a.fa-youtube:hover{
+       background-color:@youtube;
+     }
+     a.fa-vimeo-square:hover{
+       background-color:@vimeo;
+     }
+     a.fa-vine:hover{
+       background-color:@vine;
+     }
+     a.fa-share-alt:hover{
+       background-color:@sharethis;
+     }
+     a.fa-envelope:hover{
+       background-color:@contact;
+     }
+     a.fa-rss:hover{
+       background-color:@rss;
+     }
+  }
+}
+.page-banner{
+  height: 28vw;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.page-title-area{
+  background: @green;
+  color: @white;  
+  h1{
+    font-size: 3.6rem;
+    font-weight: 200;
+    padding: 0.5em;
+  }
+}
+
+.msd-fa, .msd-icon{
+  &.block{
+    display: block;
+    &:before{
+    margin: 0 auto;
+      display: block;
+    }
+  }
+  &.circle, &.square{
+    &:before{
+      background: @blue;
+      color: @white;
+      height: 2.4em;
+      width: 2.4em;
+      text-align: center;
+      padding: 0.7em 0;
+    }
+  }
+  &.circle{
+    &:before{
+      border-radius: 50%;
+    }
+  }
+}
+
+.site-inner{
+  main.content{
+    article.page{
+      .entry-content{
+        p.first-child{
+          .customheader(2.4);
+          font-weight: 200;
+          color: @medgrey;
+        }
+        h2{
+          .customheader(3.2);
+          font-weight: 200;
+          border-top: 1px solid @medgrey;
+          border-bottom: 1px solid @medgrey;
+        }
+        h3{
+          .customheader(1.8);
+        }
+        h4{
+          .customheader(1.6);
+        }
+        strong, h3, h4, a, a:visited {
+          color: @red;
+        }
+        a:hover{
+          color: darken(@red,20%);
+        }
+      }
+    }
+  }
+}
+
+.page.programs{
+  .site-inner{
+    background-image: url(../img/bkg-programs.png);
+    background-repeat: no-repeat;
+    background-position: 0 2rem;
+  }
+}
+
+.single-county{
+  article.county{
+    border-bottom: 2px solid @offwhite;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    .entry-content{
+      h3{
+        font-weight: 400;
+        margin-top: 1em;
+      }
+      .pie-charts,.distribution-charts{
+        .data{
+          strong{
+            font-size: 3em;
+            color: @red;
+            display: block;
+            line-height: 1;
+          }
+        }
+        .chart{
+          .icon{
+            background-color: @red;
+            background-repeat: no-repeat;
+            background-position: center center;
+            border-radius: 50%;
+            height: 120px;
+            width: 120px;
+            display: block;
+          }
+          .icon-plate{
+            background-image: url(../img/icon-plate.png);
+          }
+          .icon-apple{
+            background-image: url(../img/icon-apple.png);
+          }
+        }
+      }
+    }
+  }
+  .bio{
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    h3{
+      margin-top: 1.6rem;
+    }
+  }
+}
