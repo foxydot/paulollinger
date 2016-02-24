@@ -18,7 +18,7 @@ function msdlab_favicon_filter( $favicon_url ) {
     return get_stylesheet_directory_uri().'/lib/img/favicon.ico';
 }
 
-//add_action('genesis_before_content','msd_post_image');
+//add_action('genesis_entry_content','msd_post_image', 1);
 /**
  * Manipulate the featured image
  */
@@ -34,14 +34,8 @@ function msd_post_image() {
 
     // This is the most important part!  Checks to see if the post has a Post Thumbnail assigned to it. You can delete the if conditional if you want and assume that there will always be a thumbnail
     if ( has_post_thumbnail() && is_page() ) {
-        msdlab_page_banner();
-    } elseif ( has_post_thumbnail() && is_cpt('project') ) {
-        if( is_single() ){
-            msdlab_page_banner();
-        }
-    } elseif ( has_post_thumbnail() ){
-        print '<section class="header-image">';
-        printf( '<a title="%s" href="%s">%s</a>', get_permalink(), the_title_attribute( 'echo=0' ), genesis_get_image( array( 'size' => $size, 'attr' => $default_attr ) ) );
+        print '<section class="post-image">';
+        printf( '%s', genesis_get_image( array( 'size' => $size, 'attr' => $default_attr ) ) );
         print '</section>';
     }
 

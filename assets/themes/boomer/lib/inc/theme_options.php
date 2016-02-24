@@ -31,7 +31,6 @@ function msdlab_blue_options_scripts(){
 }
 function msdlab_blue_defaults( $defaults ) {
 
-    $defaults['color'] = '';
     $defaults['logo'] = '';
     return $defaults;
 }
@@ -47,7 +46,6 @@ add_filter( 'genesis_theme_settings_defaults', 'msdlab_blue_defaults' );
 function msdlab_register_blue_sanitization_filters() {
     genesis_add_option_filter( 'no_html', GENESIS_SETTINGS_FIELD,
         array(
-            'color',
             'logo',
         ) );
 }
@@ -73,7 +71,6 @@ add_action('genesis_theme_settings_metaboxes', 'msdlab_register_blue_settings_bo
  */
 
 function msdlab_blue_settings_box() {
-    $color = esc_attr( genesis_get_option('color') );
     $logo = esc_attr( genesis_get_option('logo') );
     // Add to the top of our data-update-link page
     if (isset($_REQUEST['file'])) { 
@@ -102,26 +99,9 @@ $modal_update_href = esc_url( add_query_arg( array(
 </a> 
     </div>
     </div>
-    <div class="row">
-        <label class="col-md-3">Color Scheme</label>
-        <div class="col-md-9">
-        <select name="<?php echo GENESIS_SETTINGS_FIELD; ?>[color]">
-            <option value="blue"<?php print $color == 'blue'?' selected':''; ?>>Blue</option>
-            <option value="green"<?php print $color == 'green'?' selected':''; ?>>Green</option>
-            <option value="purple"<?php print $color == 'purple'?' selected':''; ?>>Purple</option>
-        </select>
-        </div>
-    </div>
     
     
     <?php
-}
-
-
-add_filter('body_class','msdlab_blue_settings_body_class');
-function msdlab_blue_settings_body_class($classes) {
-    $classes[] = 'blue-'.esc_attr( genesis_get_option('color') );
-    return $classes;
 }
 
 add_action('wp_head','msdlab_blue_logo');

@@ -3,8 +3,6 @@ Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
 
 .footer-widgets {
-  background-color: @green;
-  color: @white;
   clear: both;
   padding: 2rem 0;
   .customheader(1.2);
@@ -18,43 +16,58 @@ Footer Widgets
   
   .widget {
     margin: 0 auto;
-    float: left;
-    display: inline-block;
+    display: block;
   }
   
   .widget-title {
     font-size: 2.8rem;
     font-weight: 300;
   }
-  .widget.widget_sp_image{
-    margin: 0 1.6rem;
-    .widget-title{
-      display: none;
-    }
-  }
-  .widget.logo{
-    background-image: url(../img/logo.svg);
-    background-size: 150px auto;
+  .widget.gform_widget{
+    background-color: @offwhite;
+    background-image: url(../img/bolt.png);
     background-repeat: no-repeat;
-    background-position: left center;
-    padding-left: 165px;
-    padding-right: 1.2rem;
-    border-right: 1px solid @white;
-    margin-right: 1.2rem;
-    h3{
-      display: none;
+    background-position: 1.5rem center;
+    padding-left: 90px;
+    min-height: 130px;
+    font-size: 2rem;
+    .gform_heading,.gform_body,.gform_footer{
+      display: inline-block;
+      position: relative;
     }
-  }
-  .widget.msd-connected.last-child{
-    max-width: 80px;
-  }
-  li {
-    list-style-type: none;
-    margin-bottom: 6px;
-    margin-bottom: 0.6rem;
-    word-wrap: break-word;
+    .gform_heading{
+      width: 49%;
+      h3.gform_title {
+        color: @red;
+        font-size: 2.6rem;
+        text-transform: uppercase;
+        font-weight: 300;
+      }
+      span.gform_description{
+      }
+    }
+    .gform_body{
+      width: 29%;
+      top: -1.4em;
+      .gform_fields{
+        .gfield{
+          label.gfield_label{
+            display: none;
+          }
+        }
+      }
+    }
+    .gform_footer{
+      width: 19%;
+      top: -1.4em;
+      .button{
+        background-color: @yellow;
+        color: @medgrey;
+      }
+    }
   }
   
+  .widget.msd-connected{
   .connected-text{
     text-align: center;
     max-width: 75%;
@@ -85,6 +98,14 @@ Footer Widgets
       .button(@blue);
     }
   }
+  }
+  li {
+    list-style-type: none;
+    margin-bottom: 6px;
+    margin-bottom: 0.6rem;
+    word-wrap: break-word;
+  }
+  
   .align-right{
     text-align: right;
     text-transform: uppercase;

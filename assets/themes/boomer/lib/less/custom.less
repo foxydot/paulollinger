@@ -3,23 +3,16 @@
     position: relative;
   }
   .header-widget-area{
-    position: absolute;
     right: 0;
   }
   .connected-text{
-    float: right;
-    a.food-btn{
-      max-width: 60px;
-      background-color: @green;
-      color: @white;
-      text-align: center;
-      display: block;
-      padding: 0.75em 0.5em;
-      margin: 1em 0;
-      &:hover{
-        background-color: darken(@green, 10%);
-        color: @white;
-        text-decoration: none;
+    font-size: 1.3rem;
+  }
+  .connected-social{
+    .social-media{
+      a.fa{
+        background: @white;
+        color: @red;
       }
     }
   }
@@ -30,18 +23,21 @@
     float: right;
     a.fa{
       background: @dkgrey;
-      color: @white;
-      height: 3rem;
-      width: 3rem;
-      margin: 0.4rem;
+      color: @white;    
+      font-size: 3rem;
+      height: 4.5rem;
       line-height: 1.5;
-      font-size: 2rem;
-      border-radius: 8px;
+      margin: 1.5rem 4rem 0;
+      width: 4.5rem;
+      border-radius: 50%;
       &:before{
         opacity: 1;
       }
     }
     a.fa:hover{
+    }
+    a.fa.first-child{
+      margin-left: 0;
     }
     a.fa.last-child{
       margin-right: 0;

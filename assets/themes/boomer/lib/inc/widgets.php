@@ -3,7 +3,7 @@
  * Connected Class
  */
 if(class_exists('MSDConnected')){
-class KohlerConnected extends MSDConnected {
+class MSDBlueConnected extends MSDConnected {
     function widget( $args, $instance ) {
         extract($args);
         extract($instance);
@@ -15,6 +15,8 @@ class KohlerConnected extends MSDConnected {
         print '<div class="wrap">';
         if(($address||$phone||$tollfree||$fax||$email||$social)&&$form_id > 0){
             print '<div class="col-md-7">';
+        } elseif(($address||$phone||$tollfree||$fax||$email)&&$social){
+            print '<div class="col-md-6">';
         }
         if ( $form_id > 0 ){
             print '<div class="connected-form">';
@@ -29,7 +31,6 @@ class KohlerConnected extends MSDConnected {
             print '<div class="col-md-5 align-right">';
         }
         if ( $address ){
-            print '<h3>Address</h3>';
             $bizname = do_shortcode('[msd-bizname]'); 
             if ( $bizname ){
                 print '<div class="connected-bizname">'.$bizname.'</div>';
@@ -83,12 +84,18 @@ class KohlerConnected extends MSDConnected {
             $email = (get_option('msdsocial_email')!='')?'Email: <span itemprop="email"><a href="mailto:'.antispambot(get_option('msdsocial_email')).'">'.antispambot(get_option('msdsocial_email')).'</a></span> ':'';
             if ( $email ){ print '<div class="connected-email">'.$email.'</div>'; }
         }
+        if(($address||$phone||$tollfree||$fax||$email)&&$social){
+            print '</div><div class="col-md-6">';
+        }
+        
         if ( $social ){
             $social = do_shortcode('[msd-social]');
             if( $social ){ print '<div class="connected-social">'.$social.'</div>'; }
         }   
         
         if(($address||$phone||$tollfree||$fax||$email||$social)&&$form_id > 0){
+            print '</div>';
+        } elseif(($address||$phone||$tollfree||$fax||$email)&&$social){
             print '</div>';
         }
         print '</div>';
@@ -97,5 +104,5 @@ class KohlerConnected extends MSDConnected {
     }
 }
 
-add_action('widgets_init', create_function('', 'return register_widget("KohlerConnected");'));
+add_action('widgets_init', create_function('', 'return register_widget("MSDBlueConnected");'));
 }

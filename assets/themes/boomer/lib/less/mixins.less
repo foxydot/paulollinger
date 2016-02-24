@@ -1,30 +1,19 @@
 @import 'lesshat';
 /* Import Fonts
 ------------------------------------------------------------ */
-@import 'font-face';
+@import url(//fonts.googleapis.com/css?family=Montserrat:400,700);
 
 /* Font Stacks */
-.customserif(@size:1.6) {
-  font-family: Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif;
-  font-weight: 400;
-  font-size: unit((@size*10),px);
-  font-size: unit(@size,rem);
-  line-height: 1.625;
-}
-.custombody(@size:1.6) {
-  font-family: "Fira Sans","Helvetica Neue", "Trebuchet MS", Calibri, sans-serif;
+.custombody(@size:1.8) {
+  font-family: "Montserrat","Helvetica Neue", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: unit((@size*10),px);
   font-size: unit(@size,rem);
   line-height: 1.625;
 }
 
-.custombodythin(@size:1.6){
-  .custombody(@size);
-  font-family: "Helvetica Neue Thin", "Trebuchet MS", Calibri, sans-serif;
-}
-.customheader(@size:1.6) {
-  font-family: "Fira Sans","Trebuchet MS", Calibri, sans-serif;
+.customheader(@size:1.8) {
+  font-family: "Montserrat","Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: unit((@size*10),px);
   font-size: unit(@size,rem);
@@ -40,11 +29,11 @@
 
 
 /* Colors */
-@red: #A12616;
+@red: #E75B4C;
 @orange: #F16528;
-@yellow: #ff0;
-@green: #90C848;
-@blue: #0F6BAE;
+@yellow: #F7E93E;
+@green: #85D264;
+@blue: #54A4D9;
 @purple: #90f;
 @beige: #c96;
 @brown: #630;
@@ -57,7 +46,7 @@
 @dkyellow: darken(@yellow, 20%);
 @ltgreen: lighten(@green,20%);
 @dkgreen: darken(@green, 20%);
-@ltblue: lighten(@blue,20%);
+@ltblue: #A6E4E4;
 @dkblue: darken(@blue, 20%);
 @ltpurple: lighten(@purple,20%);
 @dkpurple: darken(@purple, 20%);
@@ -68,10 +57,10 @@
 
 /* Neutrals */
 @white: #FFF;
-@offwhite: #F2F7FA;
+@offwhite: #F1F1F3;
 @vltgrey: #B7B7B7;
-@ltgrey: #959595;
-@mdgrey: #7F7F7F;
+@ltgrey: #A9A7B4;
+@mdgrey: #6B6B6D;
 @medgrey: @mdgrey;
 @dkgrey: #353535;
 @black: #000;
@@ -204,9 +193,10 @@
 
 
 /* Buttons */
-.button(@color:@orange) {
+.button(@color:@red) {
   background-color: @color;
-  border-radius: 30px;
+  border: 0;
+  border-radius: 8px;
   padding: 6px 24px;
   .customsanserif;
   color: #FFFFFF;
@@ -216,7 +206,6 @@
   display: table;
   margin: 12px auto;
   text-decoration: none;
-  width: 80%;
 }
 
 

@@ -23,9 +23,6 @@ Site Navigation
      text-decoration: none;
     }
    }
-   .current-menu-item>a{
-     color: @green;
-   }
 }
 
 .genesis-nav-menu > .menu-item > a {
@@ -116,30 +113,64 @@ Site Navigation
 --------------------------------------------- */
 
 .nav-primary {
-  .customheader(1.4);
-  width: 60%;
+  .customheader(2.4);
+  width: 66%;
   float: left;
-  margin-top: 1.6rem;
+  margin-top: 5.2rem;
   text-align: right;
   li.menu-item{
     padding: 0;
+    width: 17.75%;
+    text-align: center;
+    margin:1%;
     a{
-      padding: 0rem 2.2rem;
-      color: @medgrey;   
+      border-bottom: 6px solid @ltgrey;
+      color: @medgrey; 
+      padding: 0.2em 0;  
+      text-transform: uppercase;
+    }
+    &.about a{
+      border-color: @red;
+      &:hover{
+        background-color: @red;
+      }
+    }
+    &.book a{
+      border-color: @ltblue;
+      &:hover{
+        background-color: @ltblue;
+      }
+    }
+    &.blog a{
+      &:hover{
+        background-color: @ltgrey;
+      }
+    }
+    &.events a{
+      border-color: @green;
+      &:hover{
+        background-color: @green;
+      }
+    }
+    &.contact a{
+      border-color: @yellow;
+      &:hover{
+        background-color: @yellow;
+      }
     }
     .sub-menu{
-      background-color: lighten(@green,40%);
+      background-color: @offwhite;
       margin-top: 0px;
       margin-left: 4rem;
       .box-shadow(0 6px 6px rgba(20,20,20,0.5));
       li.menu-item{
         padding: 0 2rem;
         width: 100%;
-        border-bottom: 1px solid lighten(@green, 30%);
+        border-bottom: 1px solid @offwhite;
         a{
           background-color: transparent;
           border: 0;
-          color: @dkblue;
+          color: @medgrey;
           padding: 1rem 0;
           width: 100%;
         }
@@ -153,26 +184,16 @@ Site Navigation
       }
     }
   }
-  .menu>li.menu-item>a{
-    font-size: 1.4em;
-    font-family: 'museo300';
-    &:before{
-      .fontawesome;
-      content: '\f0da';
-      color: @green;
-      display: inline-block;
-      margin-right: 1rem;
-    }
-  }
-  li.separator {
-    color: @green;
-  }
   li:hover, li.current-menu-item, li.current-menu-ancestor{
     a, a:hover{
       text-decoration: none;
       }
   }
+  li.first-child{
+    margin-left: 0;
+  }
   li.last-child{
+    margin-right: 0;
   }
 }
 .mainNav>ul>li.first>ul>li.title>ul>li>ul>li {
