@@ -15,6 +15,9 @@ add_theme_support( 'genesis-structural-wraps', array(
 'site-inner'
 ) );
 
+/** Remove Edit Link */
+add_filter( 'edit_post_link', '__return_false' );
+
 /*** HEADER ***/
 add_action('wp_head','msdlab_add_apple_touch_icons');
 add_action('wp_head','msdlab_maybe_wrap_inner');
