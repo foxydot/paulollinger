@@ -6275,7 +6275,7 @@ you can use the generic selector below, but it's slower:
   font-weight: 400;
   font-size: 18px;
   font-size: 1.8rem;
-  line-height: 1.625;
+  line-height: 1.8;
 }
 .fontawesome {
   font-family: "FontAwesome";
@@ -6289,18 +6289,18 @@ you can use the generic selector below, but it's slower:
   background-color: #F16528;
   border: 0;
   border-radius: 8px;
-  padding: 6px 24px;
+  padding: 1em 2em;
   font-family: "Montserrat", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-size: 1.8rem;
-  line-height: 1.625;
+  line-height: 1.8;
   color: #FFFFFF;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: normal;
   text-transform: uppercase;
   display: table;
-  margin: 12px auto;
+  margin: 1em auto;
   text-decoration: none;
   background-color: #d84b0e;
 }
@@ -6328,7 +6328,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   font-size: 1.8rem;
-  line-height: 1.625;
+  line-height: 1.8;
 }
 a,
 button,
@@ -6393,7 +6393,7 @@ blockquote p {
   font-weight: 400;
   font-size: 18px;
   font-size: 1.8rem;
-  line-height: 1.625;
+  line-height: 1.8;
 }
 blockquote::before {
   content: "\201C";
@@ -6427,7 +6427,7 @@ h6 {
   font-weight: 400;
   font-size: 18px;
   font-size: 1.8rem;
-  line-height: 1.625;
+  line-height: 1.8;
   line-height: 1.2;
   margin: 0 0 16px;
   margin: 0 0 1.6rem;
@@ -6520,18 +6520,18 @@ input[type="submit"],
   background-color: #E75B4C;
   border: 0;
   border-radius: 8px;
-  padding: 6px 24px;
+  padding: 1em 2em;
   font-family: "Montserrat", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-size: 1.8rem;
-  line-height: 1.625;
+  line-height: 1.8;
   color: #FFFFFF;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: normal;
   text-transform: uppercase;
   display: table;
-  margin: 12px auto;
+  margin: 1em auto;
   text-decoration: none;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -6548,18 +6548,18 @@ input:hover[type="submit"],
   background-color: #F16528;
   border: 0;
   border-radius: 8px;
-  padding: 6px 24px;
+  padding: 1em 2em;
   font-family: "Montserrat", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-size: 1.8rem;
-  line-height: 1.625;
+  line-height: 1.8;
   color: #FFFFFF;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: normal;
   text-transform: uppercase;
   display: table;
-  margin: 12px auto;
+  margin: 1em auto;
   text-decoration: none;
   background-color: #d84b0e;
 }
@@ -6598,6 +6598,7 @@ td {
 }
 .container {
   max-width: none;
+  width: 100%;
 }
 /*
 Structure and Layout
@@ -6759,7 +6760,7 @@ img.alignright,
   font-weight: 400;
   font-size: 18px;
   font-size: 1.8rem;
-  line-height: 1.625;
+  line-height: 1.8;
   color: #353535;
   margin-bottom: 4px;
   margin-bottom: 0.4rem;
@@ -6778,9 +6779,10 @@ img.alignright,
 --------------------------------------------- */
 .section-title,
 .entry-title {
-  font-size: 36px;
-  font-size: 3.6rem;
+  font-size: 48px;
+  font-size: 2.8rem;
   line-height: 1;
+  text-transform: uppercase;
 }
 .section-title a,
 .entry-title a,
@@ -6987,7 +6989,7 @@ Site Header
   font-weight: 400;
   font-size: 18px;
   font-size: 1.8rem;
-  line-height: 1.625;
+  line-height: 1.8;
   font-weight: 700;
   padding: 16px 0;
   padding: 1.6rem 0;
@@ -7100,6 +7102,7 @@ Site Header
   padding: 0;
 }
 .site-header .search-form {
+  border: 0;
   float: right;
 }
 /*
@@ -7112,7 +7115,7 @@ Site Navigation
   font-weight: 400;
   font-size: 18px;
   font-size: 1.8rem;
-  line-height: 1.625;
+  line-height: 1.8;
   line-height: 1.5;
   width: 100%;
 }
@@ -7209,7 +7212,7 @@ Site Navigation
   font-weight: 400;
   font-size: 24px;
   font-size: 2.4rem;
-  line-height: 1.625;
+  line-height: 1.8;
   width: 66%;
   float: left;
   margin-top: 5.2rem;
@@ -7317,7 +7320,7 @@ Site Navigation
   font-weight: 400;
   font-size: 14px;
   font-size: 1.4rem;
-  line-height: 1.625;
+  line-height: 1.8;
   padding: 0 1rem;
   color: #A9A7B4;
   text-transform: lowercase;
@@ -7433,7 +7436,7 @@ article.entry {
 }
 .entry-content h3 {
   color: #353535;
-  font-weight: 700;
+  font-weight: 400;
 }
 .entry-content .attachment a,
 .entry-content .gallery a {
@@ -7497,7 +7500,7 @@ article.entry {
   font-weight: 400;
   font-size: 36px;
   font-size: 3.6rem;
-  line-height: 1.625;
+  line-height: 1.8;
   font-weight: 300;
   color: #6B6B6D;
   line-height: 1.25;
@@ -7507,7 +7510,7 @@ article.entry {
   font-weight: 400;
   font-size: 32px;
   font-size: 3.2rem;
-  line-height: 1.625;
+  line-height: 1.8;
   font-weight: 200;
   border-bottom: 1px solid #6B6B6D;
 }
@@ -7697,7 +7700,7 @@ Sidebars
   font-weight: 400;
   font-size: 24px;
   font-size: 2.4rem;
-  line-height: 1.625;
+  line-height: 1.8;
   color: #6B6B6D;
 }
 .sidebar .enews-widget {
@@ -7710,18 +7713,18 @@ Sidebars
   background-color: #E75B4C;
   border: 0;
   border-radius: 8px;
-  padding: 6px 24px;
+  padding: 1em 2em;
   font-family: "Montserrat", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-size: 1.8rem;
-  line-height: 1.625;
+  line-height: 1.8;
   color: #FFFFFF;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: normal;
   text-transform: uppercase;
   display: table;
-  margin: 12px auto;
+  margin: 1em auto;
   text-decoration: none;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -7756,7 +7759,7 @@ Footer Widgets
   font-weight: 400;
   font-size: 12px;
   font-size: 1.2rem;
-  line-height: 1.625;
+  line-height: 1.8;
 }
 .footer-widgets a {
   color: #FFF;
@@ -7842,18 +7845,18 @@ Footer Widgets
   background-color: #54A4D9;
   border: 0;
   border-radius: 8px;
-  padding: 6px 24px;
+  padding: 1em 2em;
   font-family: "Montserrat", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-size: 1.8rem;
-  line-height: 1.625;
+  line-height: 1.8;
   color: #FFFFFF;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: normal;
   text-transform: uppercase;
   display: table;
-  margin: 12px auto;
+  margin: 1em auto;
   text-decoration: none;
 }
 .footer-widgets li {
@@ -7892,7 +7895,7 @@ Site Footer
   font-weight: 400;
   font-size: 10px;
   font-size: 1rem;
-  line-height: 1.625;
+  line-height: 1.8;
   padding: 2rem;
 }
 .site-footer .wrap {
@@ -7945,7 +7948,7 @@ Site Footer
   font-weight: 400;
   font-size: 18px;
   font-size: 1.8rem;
-  line-height: 1.625;
+  line-height: 1.8;
   font-weight: 300;
   color: #6B6B6D;
   line-height: 1.25;
@@ -7959,7 +7962,7 @@ Site Footer
   font-weight: 400;
   font-size: 18px;
   font-size: 1.8rem;
-  line-height: 1.625;
+  line-height: 1.8;
   font-weight: 300;
   color: #6B6B6D;
   line-height: 1.25;
@@ -7970,7 +7973,7 @@ Site Footer
   font-weight: 400;
   font-size: 24px;
   font-size: 2.4rem;
-  line-height: 1.625;
+  line-height: 1.8;
   font-weight: 300;
   text-align: center;
   color: #6B6B6D;
@@ -8214,21 +8217,12 @@ Site Footer
 .msd-icon.circle:before {
   border-radius: 50%;
 }
-.site-inner main.content article.page .entry-content p.first-child {
-  font-family: "Montserrat", "Trebuchet MS", Calibri, sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  font-size: 2.4rem;
-  line-height: 1.625;
-  font-weight: 200;
-  color: #6B6B6D;
-}
 .site-inner main.content article.page .entry-content h2 {
   font-family: "Montserrat", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 32px;
   font-size: 3.2rem;
-  line-height: 1.625;
+  line-height: 1.8;
   font-weight: 200;
   border-top: 1px solid #6B6B6D;
   border-bottom: 1px solid #6B6B6D;
@@ -8238,70 +8232,14 @@ Site Footer
   font-weight: 400;
   font-size: 18px;
   font-size: 1.8rem;
-  line-height: 1.625;
+  line-height: 1.8;
 }
 .site-inner main.content article.page .entry-content h4 {
   font-family: "Montserrat", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
-  line-height: 1.625;
-}
-.site-inner main.content article.page .entry-content strong,
-.site-inner main.content article.page .entry-content h3,
-.site-inner main.content article.page .entry-content h4,
-.site-inner main.content article.page .entry-content a,
-.site-inner main.content article.page .entry-content a:visited {
-  color: #E75B4C;
-}
-.site-inner main.content article.page .entry-content a:hover {
-  color: #b52718;
-}
-.page.programs .site-inner {
-  background-image: url(../img/bkg-programs.png);
-  background-repeat: no-repeat;
-  background-position: 0 2rem;
-}
-.single-county article.county {
-  border-bottom: 2px solid #F1F1F3;
-  padding-bottom: 2rem;
-  margin-bottom: 2rem;
-}
-.single-county article.county .entry-content h3 {
-  font-weight: 400;
-  margin-top: 1em;
-}
-.single-county article.county .entry-content .pie-charts .data strong,
-.single-county article.county .entry-content .distribution-charts .data strong {
-  font-size: 3em;
-  color: #E75B4C;
-  display: block;
-  line-height: 1;
-}
-.single-county article.county .entry-content .pie-charts .chart .icon,
-.single-county article.county .entry-content .distribution-charts .chart .icon {
-  background-color: #E75B4C;
-  background-repeat: no-repeat;
-  background-position: center center;
-  border-radius: 50%;
-  height: 120px;
-  width: 120px;
-  display: block;
-}
-.single-county article.county .entry-content .pie-charts .chart .icon-plate,
-.single-county article.county .entry-content .distribution-charts .chart .icon-plate {
-  background-image: url(../img/icon-plate.png);
-}
-.single-county article.county .entry-content .pie-charts .chart .icon-apple,
-.single-county article.county .entry-content .distribution-charts .chart .icon-apple {
-  background-image: url(../img/icon-apple.png);
-}
-.single-county .bio {
-  padding-bottom: 2rem;
-  margin-bottom: 2rem;
-}
-.single-county .bio h3 {
-  margin-top: 1.6rem;
+  line-height: 1.8;
 }
 .nav-responsive ul,
 .nav-responsive li,

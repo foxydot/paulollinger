@@ -8,7 +8,7 @@
   font-weight: 400;
   font-size: 18px;
   font-size: 1.8rem;
-  line-height: 1.625;
+  line-height: 1.8;
 }
 .fontawesome {
   font-family: "FontAwesome";
@@ -22,18 +22,18 @@
   background-color: #F16528;
   border: 0;
   border-radius: 8px;
-  padding: 6px 24px;
+  padding: 1em 2em;
   font-family: "Montserrat", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-size: 1.8rem;
-  line-height: 1.625;
+  line-height: 1.8;
   color: #FFFFFF;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: normal;
   text-transform: uppercase;
   display: table;
-  margin: 12px auto;
+  margin: 1em auto;
   text-decoration: none;
   background-color: #d84b0e;
 }
@@ -46,7 +46,22 @@
   visibility: hidden;
 }
 .site-inner {
-  display: none;
+  margin: 2rem;
+}
+.site-inner .content-sidebar-wrap {
+  background-image: url(../img/paul_silhouette.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+}
+.site-inner .content-sidebar-wrap main.content article header.entry-header .entry-title {
+  color: #E75B4C;
+}
+.site-inner .content-sidebar-wrap main.content article .entry-content {
+  max-width: 475px;
+}
+.site-inner .content-sidebar-wrap main.content article .entry-content .button {
+  margin-left: 5em;
 }
 .sectioned-page-wrapper .section {
   color: #6B6B6D;

@@ -135,11 +135,6 @@
   main.content{
     article.page{
       .entry-content{
-        p.first-child{
-          .customheader(2.4);
-          font-weight: 200;
-          color: @medgrey;
-        }
         h2{
           .customheader(3.2);
           font-weight: 200;
@@ -152,69 +147,8 @@
         h4{
           .customheader(1.6);
         }
-        strong, h3, h4, a, a:visited {
-          color: @red;
-        }
-        a:hover{
-          color: darken(@red,20%);
-        }
       }
     }
   }
 }
 
-.page.programs{
-  .site-inner{
-    background-image: url(../img/bkg-programs.png);
-    background-repeat: no-repeat;
-    background-position: 0 2rem;
-  }
-}
-
-.single-county{
-  article.county{
-    border-bottom: 2px solid @offwhite;
-    padding-bottom: 2rem;
-    margin-bottom: 2rem;
-    .entry-content{
-      h3{
-        font-weight: 400;
-        margin-top: 1em;
-      }
-      .pie-charts,.distribution-charts{
-        .data{
-          strong{
-            font-size: 3em;
-            color: @red;
-            display: block;
-            line-height: 1;
-          }
-        }
-        .chart{
-          .icon{
-            background-color: @red;
-            background-repeat: no-repeat;
-            background-position: center center;
-            border-radius: 50%;
-            height: 120px;
-            width: 120px;
-            display: block;
-          }
-          .icon-plate{
-            background-image: url(../img/icon-plate.png);
-          }
-          .icon-apple{
-            background-image: url(../img/icon-apple.png);
-          }
-        }
-      }
-    }
-  }
-  .bio{
-    padding-bottom: 2rem;
-    margin-bottom: 2rem;
-    h3{
-      margin-top: 1.6rem;
-    }
-  }
-}

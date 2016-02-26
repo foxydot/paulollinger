@@ -4,7 +4,28 @@
 #hp-top{
 }
 .site-inner{
-  display: none;
+  margin: 2rem;
+  .content-sidebar-wrap{
+    background-image: url(../img/paul_silhouette.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+    main.content{
+      article{
+        header.entry-header{
+          .entry-title{
+            color: @red;
+          }
+        }
+        .entry-content{
+          max-width: 475px;
+          .button{
+            margin-left: 5em;
+          }
+        }
+      }
+    }
+  }
 }
 .sectioned-page-wrapper{
   .section{
