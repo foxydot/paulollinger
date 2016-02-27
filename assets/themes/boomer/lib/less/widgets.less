@@ -53,3 +53,60 @@ section.layerslider_widget{
   padding: 0;
   margin: 0;
 }
+
+.sidebar{
+  .widget.widget_twitter_feed{
+    background-color:@offwhite;
+    h4.widget-title{
+      background-color: @twitter;
+      color: @white;
+      &:before{
+        .fontawesome;
+        background-color: white;
+        border-radius: 50%;
+        content: '\f099';
+        color: @twitter;
+        height: 3rem;
+        width: 3rem;
+        display: inline-block;
+        text-align: center;
+        line-height: 1.5;
+        margin: 4px 0.6em;
+      }
+    }
+    ul{
+      li{
+        font-size: 1.1rem;
+        color: @medgrey;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid @ltgrey;
+        a:link,a:visited{
+          color: @twitter;
+        }
+        .user{
+          float: left;
+          width: 73px;
+          margin: 1rem 0;
+          a{
+            span{
+              display: none;
+            }
+          }
+        }
+        .tweet,.timePosted{
+          margin: 0;
+          padding-left: 84px;
+        }
+        .timePosted{
+          a{
+            color: @medgrey;
+          }
+        }
+        .interact{
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -51,6 +51,7 @@ add_action('genesis_header','msdlab_do_header' );
 
 /*** SIDEBARS ***/
 add_action('genesis_before', 'msdlab_ro_layout_logic'); //This ensures that the primary sidebar is always to the left.
+add_action('template_redirect','msdlab_select_sidebars');
 add_action('after_setup_theme','msdlab_add_extra_theme_sidebars', 4); //creates widget areas for a hero and flexible widget area
 add_filter('widget_text', 'do_shortcode');//shortcodes in widgets
 
@@ -71,9 +72,7 @@ add_filter( 'genesis_post_info', 'sp_post_info_filter' );
 add_filter('excerpt_more', 'sp_read_more_link');
 add_filter( 'the_content_more_link', 'sp_read_more_link' );
 
-remove_action( 'genesis_before_post_content', 'genesis_post_info', 12 ); //remove the info (date, posted by,etc.)
-remove_action( 'genesis_after_post_content', 'genesis_post_meta' ); //remove the meta (filed under, tags, etc.)
-remove_action( 'genesis_entry_header', 'genesis_post_info', 12 ); //remove the info (date, posted by,etc.)
+//remove_action( 'genesis_entry_header', 'genesis_post_info', 12 ); //remove the info (date, posted by,etc.)
 remove_action( 'genesis_entry_footer', 'genesis_post_meta'); //remove the meta (filed under, tags, etc.)
 //add_action( 'msdlab_title_area', 'msdlab_do_post_subtitle' );
 
@@ -91,7 +90,7 @@ add_theme_support( 'genesis-footer-widgets', 1 ); //adds automatic footer widget
 //add the menu
 //add_action('genesis_before_footer','msdlab_do_footer_menu', 20);
 
-//add_action('genesis_before_footer','msdlab_do_footer_widget', 1);
+add_action('genesis_before_footer','msdlab_do_footer_widget', 1);
 
 remove_action('genesis_footer','genesis_do_footer'); //replace the footer
 add_action('genesis_footer','msdlab_do_social_footer');//with a msdsocial support one

@@ -213,6 +213,14 @@ function msdlab_add_extra_theme_sidebars(){
             ));
 }
 
+function msdlab_select_sidebars(){
+    global $post;
+    if((is_home() || is_archive() || is_single()) && $post->post_type == "post" ){
+        remove_action('genesis_sidebar', 'genesis_do_sidebar');
+        add_action('genesis_sidebar', 'msdlab_do_blog_sidebar');
+    }
+}
+
 function msdlab_do_blog_sidebar(){
     if(is_active_sidebar('blog')){
         dynamic_sidebar('blog');
@@ -301,7 +309,7 @@ function msdlab_breadcrumb_home_link($crumb){
 }
 
 function sp_post_info_filter($post_info) {
-    $post_info = 'Posted [post_date]';
+    $post_info = 'By [post_author_posts_link] | [post_date]';
     return $post_info;
 }
 function sp_read_more_link() {
@@ -390,11 +398,13 @@ function msdlab_maybe_wrap_inner(){
 /*** FOOTER ***/
 
 function msdlab_do_footer_widget(){
-    print '<div id="page_footer_widget" class="page-footer-widget">';
     if(is_active_sidebar('msdlab_page_footer')){
+    print '<div id="page_footer_widget" class="page-footer-widget">
+        <div class="wrap">';
         dynamic_sidebar('msdlab_page_footer');
+    print '</wrap>
+    </div>';
     }
-    print '</div>';
 }
 /**
  * Menu area for footer menus
