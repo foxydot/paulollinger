@@ -6474,7 +6474,7 @@ Site Header
 .header-image .site-title a {
   min-height: 275px;
   width: 100%;
-  background: url(../img/logo.png) no-repeat bottom left;
+  background: url(../img/logo.svg) no-repeat bottom left;
   margin: 0;
 }
 /* Widget Area
@@ -6873,8 +6873,8 @@ article.entry {
 .entry-content p,
 .entry-content ul,
 .quote-caption {
-  margin-bottom: 26px;
-  margin-bottom: 2.6rem;
+  margin-bottom: 14px;
+  margin-bottom: 1.4rem;
 }
 .entry-content ol,
 .entry-content ul {

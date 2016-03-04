@@ -1,8 +1,8 @@
 jQuery(document).ready(function($) {	
-    $('*:first-child').addClass('first-child');
-    $('*:last-child').addClass('last-child');
-    $('*:nth-child(even)').addClass('even');
-    $('*:nth-child(odd)').addClass('odd');
+    $('body *:first-child').addClass('first-child');
+    $('body *:last-child').addClass('last-child');
+    $('body *:nth-child(even)').addClass('even');
+    $('body *:nth-child(odd)').addClass('odd');
 	
 	var numwidgets = $('#footer-widgets div.widget').length;
 	$('#footer-widgets').addClass('cols-'+numwidgets);

@@ -243,6 +243,7 @@ class MSD_Widget_Random_Testimonial extends WP_Widget {
         $title = apply_filters( 'widget_title', empty($instance['title']) ? '' : $instance['title'], $instance, $this->id_base);
         $rows = $instance['rows'];
         $columns = $instance['columns'];
+        $slideshow = $instance['slideshow'];
         echo $before_widget;
         if ( !empty( $title ) ) { echo $before_title . $title . $after_title; }
         print(do_shortcode('[testimonial rows='.$rows.' columns='.$columns.' slideshow='.$slideshow.']'));
@@ -263,6 +264,7 @@ class MSD_Widget_Random_Testimonial extends WP_Widget {
         $title = strip_tags($instance['title']);
         $rows = $instance['rows'];
         $columns = $instance['columns'];
+        $slideshow = $instance['slideshow'];
 ?>
         <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?></label>
         <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" /></p>        
