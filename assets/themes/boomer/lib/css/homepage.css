@@ -100,17 +100,27 @@
   clear: both;
   visibility: hidden;
 }
-.site-inner {
-  padding: 0;
-}
 .site-inner .content-sidebar-wrap {
   background-image: url(../img/paul_silhouette.png);
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: contain;
 }
+.site-inner .content-sidebar-wrap:after {
+  content: 'Photo: Jessica Young';
+  font-family: "Montserrat", "Helvetica Neue", "Trebuchet MS", Calibri, sans-serif;
+  font-weight: 300;
+  font-size: 10px;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #A9A7B4;
+  visibility: visible;
+  height: auto;
+  text-align: right;
+  padding: 1rem 2rem;
+}
 .site-inner .content-sidebar-wrap main.content {
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
 .site-inner .content-sidebar-wrap main.content article header.entry-header .entry-title {
   color: #E75B4C;

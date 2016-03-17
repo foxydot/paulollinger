@@ -2,14 +2,22 @@
 @import 'mixins';
 
 .site-inner{
-  padding: 0;
   .content-sidebar-wrap{
     background-image: url(../img/paul_silhouette.png);
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: contain;
+    &:after{
+      content: 'Photo: Jessica Young';
+      .custombody(1);
+      color: @ltgrey;
+      visibility: visible;
+      height: auto;
+      text-align: right;
+      padding: 1rem 2rem;
+    }
     main.content{
-      padding-top:4rem;
+      padding-top:2rem;
       article{
         header.entry-header{
           .entry-title{

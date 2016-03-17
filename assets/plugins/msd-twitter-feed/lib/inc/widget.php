@@ -54,7 +54,7 @@ class MSD_Widget_Twitter_Feed extends WP_Widget {
         
         
         twitterFetcher.fetch(config4);
-        console.log(twitterFetcher.fetch(config4));
+        //console.log(twitterFetcher.fetch(config4));
         </script>
         ';
     }
