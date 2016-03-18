@@ -7798,20 +7798,42 @@ div.gform_wrapper .gform_body .gfield.even {
     float: none;
     display: block;
     position: relative;
+    width: 100%;
   }
   .header-image .site-header .widget-area .widget {
     display: block;
+    float: none;
+  }
+  .header-image .site-header .widget-area .widget:before,
+  .header-image .site-header .widget-area .widget:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+  }
+  .header-image .site-header .widget-area .widget:after {
+    clear: both;
+  }
+  .header-image .site-header .widget-area .widget:before,
+  .header-image .site-header .widget-area .widget:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+  }
+  .header-image .site-header .widget-area .widget:after {
+    clear: both;
   }
   .header-image .site-header .widget-area .connected-text {
     text-align: center;
     float: none;
   }
-  .header-image .site-header .widget-area .connected-text .food-btn {
-    max-width: 100%;
-    margin-bottom: 0;
-  }
   .header-image .site-header .widget-area .connected-social {
-    display: none;
+    text-align: center;
+  }
+  .header-image .site-header .widget-area .connected-social .social-media {
+    display: inline-block;
+    float: none;
   }
   .nav-primary {
     float: none;
@@ -7829,7 +7851,7 @@ div.gform_wrapper .gform_body .gfield.even {
     display: inline-block;
     width: 100%;
     text-indent: 20px;
-    background: #b4e39f;
+    background: #E75B4C;
     min-height: 46px;
     padding-top: 14px;
     position: relative;
@@ -7844,8 +7866,10 @@ div.gform_wrapper .gform_body .gfield.even {
     font-size: 1.2rem;
   }
   .nav-responsive a#pull ul#mobile_menu {
-    margin-top: 14px;
     border-top: 1px solid #A9A7B4;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
   }
   .nav-responsive a#pull ul#mobile_menu li {
     display: block;
@@ -7853,7 +7877,7 @@ div.gform_wrapper .gform_body .gfield.even {
     padding: 0;
   }
   .nav-responsive a#pull ul#mobile_menu li a {
-    background: #b4e39f;
+    background: #E75B4C;
     color: #FFF;
     display: block;
     width: 100%;
@@ -7865,7 +7889,7 @@ div.gform_wrapper .gform_body .gfield.even {
     right: 15px;
   }
   .nav-responsive a#pull ul#mobile_menu li a:hover {
-    background: #d3efc7;
+    background: #ed8479;
   }
   .nav-responsive a#pull ul#mobile_menu li .toggle-switch {
     margin-right: 12px;
@@ -7895,7 +7919,7 @@ div.gform_wrapper .gform_body .gfield.even {
     display: none;
   }
   .nav-responsive a#pull ul#mobile_menu li.current-menu-item a {
-    background: #b4e39f;
+    background: #E75B4C;
   }
   .nav-responsive a#pull:hover {
     text-decoration: none;
@@ -7905,17 +7929,8 @@ div.gform_wrapper .gform_body .gfield.even {
     font-family: 'FontAwesome';
     font-size: 2.2rem;
     text-indent: 0;
-    color: #b4e39f;
+    color: #FFF;
     text-align: center;
-    width: 30px;
-    height: 30px;
-    -webkit-border-radius: 4px;
-    -webkit-background-clip: padding-box;
-    -moz-border-radius: 4px;
-    -moz-background-clip: padding;
-    border-radius: 4px;
-    background-clip: padding-box;
-    background: #FFF;
     display: inline-block;
     position: absolute;
     right: 15px;
