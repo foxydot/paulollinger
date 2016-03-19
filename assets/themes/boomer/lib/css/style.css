@@ -6338,6 +6338,12 @@ div.gform_wrapper form li {
   margin: 16px 0 0;
   margin: 1.6rem 0 0;
 }
+div.gform_wrapper li label,
+div.gform_wrapper form li label,
+div.gform_wrapper li .ginput_container,
+div.gform_wrapper form li .ginput_container {
+  margin: 0 !important;
+}
 div.gform_wrapper .gform_body .gfield {
   padding: 0.5em;
 }
@@ -6350,11 +6356,16 @@ div.gform_wrapper .gform_body .gfield .ginput_container .gfield_radio li {
 }
 div.gform_wrapper .gform_body .gfield .ginput_container .gfield_radio li input,
 div.gform_wrapper .gform_body .gfield .ginput_container .gfield_radio li label {
-  text-align: center;
-  display: block;
-  margin: 1px auto;
+  text-align: left;
+  display: inline-block;
   float: none;
   font-weight: 400;
+}
+div.gform_wrapper .gform_body .gfield .ginput_container .gfield_radio li input {
+  margin: 0 0.5rem;
+}
+div.gform_wrapper .gform_body .gfield .ginput_container .gfield_radio li label {
+  margin: 0 2rem 0 0;
 }
 div.gform_wrapper .gform_footer input[type="submit"] {
   font-size: 14px;

@@ -61,6 +61,9 @@ div.gform_wrapper li,
 div.gform_wrapper form li {
   margin: 16px 0 0;
   margin: 1.6rem 0 0;
+  label,.ginput_container{
+    margin: 0 !important;
+  }
 }
 
 div.gform_wrapper .gform_body .gfield{
@@ -73,11 +76,16 @@ div.gform_wrapper .gform_body .gfield{
         display: inline-block;
         min-width: 16%;
         input,label{
-          text-align: center;
-          display: block;
-          margin: 1px auto;
+          text-align: left;
+          display: inline-block;
           float: none;
           font-weight: 400;
+        }
+        input{
+          margin: 0 0.5rem;
+        }
+        label{
+          margin: 0 2rem 0 0;
         }
       }
     }
