@@ -5643,7 +5643,7 @@ td.visible-print {
 .button a:hover {
   background-color: #F16528;
   border: 0;
-  border-radius: 8px;
+  border-radius: 0;
   padding: 1em 2em;
   font-family: "Montserrat", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 300;
@@ -5874,7 +5874,7 @@ input[type="submit"],
 .entry-content .button {
   background-color: #E75B4C;
   border: 0;
-  border-radius: 8px;
+  border-radius: 0;
   padding: 1em 2em;
   font-family: "Montserrat", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 300;
@@ -5902,7 +5902,7 @@ input:hover[type="submit"],
 .entry-content .button:hover {
   background-color: #F16528;
   border: 0;
-  border-radius: 8px;
+  border-radius: 0;
   padding: 1em 2em;
   font-family: "Montserrat", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 300;
@@ -7139,7 +7139,7 @@ Sidebars
 .sidebar .widget_text .textwidget .readmore {
   background-color: #E75B4C;
   border: 0;
-  border-radius: 8px;
+  border-radius: 0;
   padding: 1em 2em;
   font-family: "Montserrat", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 300;
@@ -7274,7 +7274,7 @@ Footer Widgets
 .footer-widgets .widget.msd-connected .connected-form a.button {
   background-color: #54A4D9;
   border: 0;
-  border-radius: 8px;
+  border-radius: 0;
   padding: 1em 2em;
   font-family: "Montserrat", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 300;
@@ -7525,6 +7525,314 @@ Site Footer
     margin-left: 0px;
   }
 }
+.woocommerce ul.products li.product {
+  width: 48%;
+  padding: 20px;
+  border: 1px solid #A9A7B4;
+  margin-bottom: 20px;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9Imxlc3NoYXQtZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkYiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI0YxRjFGMyIgc3RvcC1vcGFjaXR5PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2xlc3NoYXQtZ2VuZXJhdGVkKSIgLz48L3N2Zz4=);
+  background-image: -webkit-linear-gradient(top, #FFF 0%, #F1F1F3 100%);
+  background-image: -moz-linear-gradient(top, #FFF 0%, #F1F1F3 100%);
+  background-image: -o-linear-gradient(top, #FFF 0%, #F1F1F3 100%);
+  background-image: linear-gradient(to bottom, #FFF 0%, #F1F1F3 100%);
+}
+.woocommerce ul.products li.product .product-image {
+  float: left;
+  width: 120px;
+  height: 120px;
+  margin-right: 20px;
+}
+.woocommerce ul.products li.product .product-content {
+  float: left;
+}
+.woocommerce ul.products li.product .product-content a h3 {
+  padding-top: 0;
+  text-transform: uppercase;
+}
+.woocommerce ul.products li.product .button {
+  margin-left: 0;
+  margin-right: 0;
+}
+.woocommerce .quantity .qty {
+  width: 6em;
+}
+.sectioned-page-wrapper .woocommerce ul.products li.product,
+.page-template-default .woocommerce ul.products li.product {
+  width: 100%;
+  min-width: 450px;
+  padding: 20px;
+  border: 1px solid #A9A7B4;
+  margin-bottom: 0;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9Imxlc3NoYXQtZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkYiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI0YxRjFGMyIgc3RvcC1vcGFjaXR5PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2xlc3NoYXQtZ2VuZXJhdGVkKSIgLz48L3N2Zz4=);
+  background-image: -webkit-linear-gradient(top, #FFF 0%, #F1F1F3 100%);
+  background-image: -moz-linear-gradient(top, #FFF 0%, #F1F1F3 100%);
+  background-image: -o-linear-gradient(top, #FFF 0%, #F1F1F3 100%);
+  background-image: linear-gradient(to bottom, #FFF 0%, #F1F1F3 100%);
+}
+.sectioned-page-wrapper .woocommerce ul.products li.product .product-image,
+.page-template-default .woocommerce ul.products li.product .product-image {
+  float: left;
+  width: 120px;
+  height: 120px;
+  margin-right: 20px;
+}
+.sectioned-page-wrapper .woocommerce ul.products li.product .product-content,
+.page-template-default .woocommerce ul.products li.product .product-content {
+  float: left;
+}
+.sectioned-page-wrapper .woocommerce ul.products li.product .product-content a h3,
+.page-template-default .woocommerce ul.products li.product .product-content a h3 {
+  padding-top: 0;
+  text-transform: uppercase;
+}
+.page-template-default .woocommerce .products .product {
+  width: 450px;
+  margin: 0 auto;
+  float: none;
+  display: table;
+}
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button {
+  background-color: #E75B4C;
+  border: 0;
+  border-radius: 0;
+  padding: 1em 2em;
+  font-family: "Montserrat", "Trebuchet MS", Calibri, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  display: table;
+  margin: 1em auto;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  display: inline-block;
+}
+.woocommerce #respond input#submit:hover,
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover {
+  background-color: #F16528;
+  border: 0;
+  border-radius: 0;
+  padding: 1em 2em;
+  font-family: "Montserrat", "Trebuchet MS", Calibri, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  display: table;
+  margin: 1em auto;
+  text-decoration: none;
+  background-color: #d84b0e;
+  display: inline-block;
+  line-height: 1;
+  margin: 0;
+}
+.woocommerce div.product form.cart .variations td.label,
+.woocommerce div.product form.cart .variations td.value {
+  display: block;
+  text-align: left;
+}
+.woocommerce div.product form.cart .variations label {
+  color: #353535;
+  font-weight: 300;
+  margin: 0;
+  font-size: 1.5em;
+}
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt {
+  background-color: #E75B4C;
+  border: 0;
+  border-radius: 0;
+  padding: 1em 2em;
+  font-family: "Montserrat", "Trebuchet MS", Calibri, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  display: table;
+  margin: 1em auto;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  margin: 0 auto;
+  padding: 13px 24px;
+}
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover {
+  background-color: #F16528;
+  border: 0;
+  border-radius: 0;
+  padding: 1em 2em;
+  font-family: "Montserrat", "Trebuchet MS", Calibri, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  display: table;
+  margin: 1em auto;
+  text-decoration: none;
+  background-color: #d84b0e;
+  margin: 0 auto;
+  padding: 13px 24px;
+}
+.woocommerce #reviews #comments {
+  clear: both;
+  display: table;
+  border-top: 1px solid #cc6600;
+  border-bottom: 1px solid #cc6600;
+  margin: 2rem 0;
+  padding: 2rem 0;
+  width: 100%;
+}
+.woocommerce #reviews #comments h2 {
+  color: #cc6600;
+  text-align: center;
+}
+.woocommerce #reviews #comments #reviews-carousel .carousel-indicators li {
+  border-color: #F16528;
+}
+.woocommerce #reviews #comments #reviews-carousel .carousel-indicators li .active {
+  background-color: rgba(241, 101, 40, 0.3);
+}
+.woocommerce #reviews #comments #reviews-carousel .carousel-inner .item {
+  min-height: 200px;
+  width: 80%;
+  margin: 0 auto;
+}
+.woocommerce #reviews #comments #reviews-carousel .carousel-control {
+  background: none;
+  color: #F16528;
+  width: 10%;
+  top: 40%;
+}
+.woocommerce #reviews #comments #reviews-carousel .carousel-control:focus {
+  outline: none;
+}
+.woocommerce ul li {
+  list-style: none outside none;
+}
+.woocommerce #respond input#submit.alt.disabled,
+.woocommerce #respond input#submit.alt:disabled,
+.woocommerce #respond input#submit.alt[disabled]:disabled,
+.woocommerce a.button.alt.disabled,
+.woocommerce a.button.alt:disabled,
+.woocommerce a.button.alt[disabled]:disabled,
+.woocommerce button.button.alt.disabled,
+.woocommerce button.button.alt:disabled,
+.woocommerce button.button.alt[disabled]:disabled,
+.woocommerce input.button.alt.disabled,
+.woocommerce input.button.alt:disabled,
+.woocommerce input.button.alt[disabled]:disabled {
+  background-color: #E75B4C;
+  border: 0;
+  border-radius: 0;
+  padding: 1em 2em;
+  font-family: "Montserrat", "Trebuchet MS", Calibri, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  display: table;
+  margin: 1em auto;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  display: inline-block;
+}
+.woocommerce #respond input#submit.alt.disabled:hover,
+.woocommerce #respond input#submit.alt:disabled:hover,
+.woocommerce #respond input#submit.alt[disabled]:disabled:hover,
+.woocommerce a.button.alt.disabled:hover,
+.woocommerce a.button.alt:disabled:hover,
+.woocommerce a.button.alt[disabled]:disabled:hover,
+.woocommerce button.button.alt.disabled:hover,
+.woocommerce button.button.alt:disabled:hover,
+.woocommerce button.button.alt[disabled]:disabled:hover,
+.woocommerce input.button.alt.disabled:hover,
+.woocommerce input.button.alt:disabled:hover,
+.woocommerce input.button.alt[disabled]:disabled:hover {
+  background-color: #E75B4C;
+  border: 0;
+  border-radius: 0;
+  padding: 1em 2em;
+  font-family: "Montserrat", "Trebuchet MS", Calibri, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  display: table;
+  margin: 1em auto;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  display: inline-block;
+}
+.single-product .site-inner .content-sidebar-wrap .woo-image {
+  padding-left: 0;
+}
+.single-product .site-inner .content-sidebar-wrap .woo-image h3 {
+  margin-top: 1em;
+  font-weight: 700;
+}
+.single-product .site-inner .content-sidebar-wrap .woo-summary {
+  padding-right: 0;
+}
+.single-product .site-inner .entry-subtitle {
+  font-family: "Montserrat", "Trebuchet MS", Calibri, sans-serif;
+  font-size: 36px;
+  font-size: 3.6rem;
+  line-height: 1.8;
+  font-weight: 300;
+  color: #6B6B6D;
+  line-height: 1.25;
+  border-bottom: 0;
+  text-transform: uppercase;
+}
 .site-header .wrap {
   position: relative;
 }
@@ -7650,7 +7958,7 @@ Site Footer
 .site-inner main.content article.post .entry-content a.more-link {
   background-color: #E75B4C;
   border: 0;
-  border-radius: 8px;
+  border-radius: 0;
   padding: 1em 2em;
   font-family: "Montserrat", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 300;
@@ -7674,7 +7982,7 @@ Site Footer
 .site-inner main.content article.post .entry-content a.more-link:hover {
   background-color: #F16528;
   border: 0;
-  border-radius: 8px;
+  border-radius: 0;
   padding: 1em 2em;
   font-family: "Montserrat", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 300;
@@ -7996,6 +8304,25 @@ div.gform_wrapper .gform_body .gfield.even {
   .tablepress td,
   .tablepress th {
     display: inline-block;
+  }
+  .footer-widgets .widget.gform_widget {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 1rem;
+  }
+  .footer-widgets .widget.gform_widget .gform_heading,
+  .footer-widgets .widget.gform_widget .gform_body,
+  .footer-widgets .widget.gform_widget .gform_footer {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  .footer-widgets .widget.gform_widget .gform_heading input[type='submit'],
+  .footer-widgets .widget.gform_widget .gform_body input[type='submit'],
+  .footer-widgets .widget.gform_widget .gform_footer input[type='submit'] {
+    border: 2px solid #F1F1F3;
   }
 }
 @media only screen and (max-width: 319px) {

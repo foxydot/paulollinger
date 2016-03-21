@@ -76,7 +76,7 @@
 .button a:hover {
   background-color: #F16528;
   border: 0;
-  border-radius: 8px;
+  border-radius: 0;
   padding: 1em 2em;
   font-family: "Montserrat", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 300;

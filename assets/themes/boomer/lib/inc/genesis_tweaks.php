@@ -7,6 +7,8 @@ add_theme_support( 'html5' );//* Add HTML5 markup structure
 add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
 add_theme_support( 'genesis-responsive-viewport' );//* Add viewport meta tag for mobile browsers
 add_theme_support( 'custom-background' );//* Add support for custom background
+add_theme_support( 'woocommerce' );
+add_theme_support( 'genesis-connect-woocommerce' );
 //* Add support for structural wraps
 add_theme_support( 'genesis-structural-wraps', array(
 'header',
