@@ -1,6 +1,7 @@
 <?php
 
 add_action('msdlab_before_product_loop','msdlab_move_product_thumbnail');
+add_action('woocommerce_before_single_product','msdlab_do_banner_sidebar');
 add_action('woocommerce_before_single_product','msdlab_move_price_and_cart');
 add_action('msdlab_before_product_loop','woocommerce_template_loop_product_thumbnail');
 
@@ -17,7 +18,7 @@ function msdlab_move_price_and_cart(){
         add_action('woocommerce_before_single_product_summary','msdlab_do_post_subtitle',1);
     }
     remove_action('woocommerce_single_product_summary','woocommerce_template_single_excerpt',20);
-    add_action('msdlab_after_product_image','woocommerce_template_single_excerpt',20);
+    add_action('msdlab_after_product_image','woocommerce_template_single_excerpt',40);
     remove_action('woocommerce_single_product_summary','woocommerce_template_single_price',20);
     add_action('msdlab_after_product_image','woocommerce_template_single_price',20);
     remove_action('woocommerce_single_product_summary','woocommerce_template_single_add_to_cart',30);

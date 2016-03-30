@@ -202,6 +202,11 @@ function msdlab_add_extra_theme_sidebars(){
     'id' => 'pre-header'
             ));
     genesis_register_sidebar(array(
+    'name' => 'Product Banner Sidebar',
+    'description' => 'Banner space above products',
+    'id' => 'product_banner'
+            ));
+    genesis_register_sidebar(array(
     'name' => 'Page Footer Widget',
     'description' => 'Widget on page footer',
     'id' => 'msdlab_page_footer'
@@ -224,6 +229,12 @@ function msdlab_select_sidebars(){
 function msdlab_do_blog_sidebar(){
     if(is_active_sidebar('blog')){
         dynamic_sidebar('blog');
+    }
+}
+
+function msdlab_do_banner_sidebar(){
+    if(is_active_sidebar('product_banner') && is_cpt('product')){
+        dynamic_sidebar('product_banner');
     }
 }
 /**
