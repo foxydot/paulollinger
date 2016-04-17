@@ -6,7 +6,8 @@ require_once('genesis_tweak_functions.php');
 add_theme_support( 'html5' );//* Add HTML5 markup structure
 add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
 add_theme_support( 'genesis-responsive-viewport' );//* Add viewport meta tag for mobile browsers
-add_theme_support( 'custom-background' );//* Add support for custom background
+//add_theme_support( 'custom-background' );//* Add support for custom background
+add_theme_support('post-formats', array('gallery','link','image','video','audio'));
 add_theme_support( 'woocommerce' );
 add_theme_support( 'genesis-connect-woocommerce' );
 //* Add support for structural wraps
@@ -49,7 +50,7 @@ add_action( 'genesis_header', 'genesis_do_subnav' );
 remove_action('genesis_header','genesis_do_header' );
 add_action('genesis_header','msdlab_do_header' );
 
-
+add_action('genesis_before_content','msdlab_do_banner_sidebar');
 
 /*** SIDEBARS ***/
 add_action('genesis_before', 'msdlab_ro_layout_logic'); //This ensures that the primary sidebar is always to the left.

@@ -8082,6 +8082,87 @@ Site Footer
 div.gform_wrapper .gform_body .gfield.even {
   background-color: transparent;
 }
+.banner-widget-area {
+  margin-bottom: 1em;
+}
+.sidebar-primary .tribe-events-list-widget {
+  border: 1px solid #85D264;
+}
+.sidebar-primary .tribe-events-list-widget .widget-title {
+  background: #85D264;
+  padding: 0.5em;
+  color: #FFF;
+  border: none;
+}
+.sidebar-primary .tribe-events-list-widget .widget-title:after {
+  font-family: "FontAwesome";
+  content: '\f130';
+  display: block;
+  float: right;
+}
+.sidebar-primary .tribe-events-list-widget .tribe-list-widget {
+  padding: 0.5em;
+}
+.sidebar-primary .tribe-events-list-widget .tribe-events-widget-link {
+  background: #85D264;
+  text-align: right;
+  padding: 0.5em;
+  color: #FFF;
+}
+.sidebar-primary .tribe-events-list-widget .tribe-events-widget-link a,
+.sidebar-primary .tribe-events-list-widget .tribe-events-widget-link a:link,
+.sidebar-primary .tribe-events-list-widget .tribe-events-widget-link a:visited,
+.sidebar-primary .tribe-events-list-widget .tribe-events-widget-link a:active {
+  color: #FFF;
+}
+.sidebar-primary .widget.gform_widget {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 1rem;
+  background-color: #F1F1F3;
+  background-image: url(../img/bolt.png);
+  min-height: 130px;
+  font-size: 2rem;
+}
+.sidebar-primary .widget.gform_widget .gform_heading,
+.sidebar-primary .widget.gform_widget .gform_body,
+.sidebar-primary .widget.gform_widget .gform_footer {
+  display: inline-block;
+  position: relative;
+}
+.sidebar-primary .widget.gform_widget .gform_heading h3.gform_title {
+  color: #E75B4C;
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.sidebar-primary .widget.gform_widget .gform_body {
+  top: -1.4em;
+}
+.sidebar-primary .widget.gform_widget .gform_body .gform_fields .gfield label.gfield_label {
+  display: none;
+}
+.sidebar-primary .widget.gform_widget .gform_footer {
+  top: -1.4em;
+}
+.sidebar-primary .widget.gform_widget .gform_footer .button {
+  background-color: #F7E93E;
+  color: #6B6B6D;
+}
+.sidebar-primary .widget.gform_widget .gform_heading,
+.sidebar-primary .widget.gform_widget .gform_body,
+.sidebar-primary .widget.gform_widget .gform_footer {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+}
+.sidebar-primary .widget.gform_widget .gform_heading input[type='submit'],
+.sidebar-primary .widget.gform_widget .gform_body input[type='submit'],
+.sidebar-primary .widget.gform_widget .gform_footer input[type='submit'] {
+  border: 2px solid #F1F1F3;
+}
 .nav-responsive ul,
 .nav-responsive li,
 .nav-responsive li a {

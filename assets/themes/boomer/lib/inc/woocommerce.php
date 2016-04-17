@@ -1,7 +1,7 @@
 <?php
 
 add_action('msdlab_before_product_loop','msdlab_move_product_thumbnail');
-add_action('woocommerce_before_single_product','msdlab_do_banner_sidebar');
+//add_action('woocommerce_before_single_product','msdlab_do_banner_sidebar');
 add_action('woocommerce_before_single_product','msdlab_move_price_and_cart');
 add_action('msdlab_before_product_loop','woocommerce_template_loop_product_thumbnail');
 

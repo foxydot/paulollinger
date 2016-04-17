@@ -202,8 +202,8 @@ function msdlab_add_extra_theme_sidebars(){
     'id' => 'pre-header'
             ));
     genesis_register_sidebar(array(
-    'name' => 'Product Banner Sidebar',
-    'description' => 'Banner space above products',
+    'name' => 'Product/Page Banner Sidebar',
+    'description' => 'Banner space above products/page content',
     'id' => 'product_banner'
             ));
     genesis_register_sidebar(array(
@@ -233,8 +233,10 @@ function msdlab_do_blog_sidebar(){
 }
 
 function msdlab_do_banner_sidebar(){
-    if(is_active_sidebar('product_banner') && is_cpt('product')){
+    if(is_active_sidebar('product_banner') && (is_cpt('product') || is_home())){
+        print '<div class="banner-widget-area">';
         dynamic_sidebar('product_banner');
+        print '</div>';
     }
 }
 /**

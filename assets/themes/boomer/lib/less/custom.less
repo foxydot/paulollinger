@@ -214,3 +214,86 @@
 div.gform_wrapper .gform_body .gfield.even {
     background-color: transparent;
 }
+.banner-widget-area{
+  margin-bottom: 1em;
+}
+
+.sidebar-primary{
+  .tribe-events-list-widget{
+    border: 1px solid @green;
+    .widget-title{
+      background: @green;
+      padding: 0.5em;
+      color: @white;
+      border: none;
+      &:after{
+        .fontawesome;
+        content: '\f130';
+        display: block;
+        float: right;
+      }
+    }
+    .tribe-list-widget{
+      padding: 0.5em;
+    }
+    .tribe-events-widget-link{
+      background: @green;
+      text-align: right;
+      padding: 0.5em;
+      color: @white;
+      a, a:link, a:visited, a:active{
+        color: @white;
+      }
+    }
+  }
+  .widget.gform_widget{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 1rem;
+    background-color: @offwhite;
+    background-image: url(../img/bolt.png);
+    min-height: 130px;
+    font-size: 2rem;
+    .gform_heading,.gform_body,.gform_footer{
+      display: inline-block;
+      position: relative;
+    }
+    .gform_heading{
+      h3.gform_title {
+        color: @red;
+        font-size: 2.6rem;
+        text-transform: uppercase;
+        font-weight: 300;
+      }
+      span.gform_description{
+      }
+    }
+    .gform_body{
+      top: -1.4em;
+      .gform_fields{
+        .gfield{
+          label.gfield_label{
+            display: none;
+          }
+        }
+      }
+    }
+    .gform_footer{
+      top: -1.4em;
+      .button{
+        background-color: @yellow;
+        color: @medgrey;
+      }
+    }
+    .gform_heading,.gform_body,.gform_footer{
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        input[type='submit']{
+          border: 2px solid @offwhite;
+        }
+      }
+  }
+}
