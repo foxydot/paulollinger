@@ -7739,6 +7739,13 @@ Site Footer
 .woocommerce ul li {
   list-style: none outside none;
 }
+.woocommerce .woo-summary ul {
+  margin-left: 2em;
+}
+.woocommerce .woo-summary ul li {
+  list-style: disc outside none;
+  margin-bottom: 0.5em;
+}
 .woocommerce #respond input#submit.alt.disabled,
 .woocommerce #respond input#submit.alt:disabled,
 .woocommerce #respond input#submit.alt[disabled]:disabled,
@@ -7808,6 +7815,9 @@ Site Footer
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   display: inline-block;
+}
+.single-product .site-inner .content-sidebar-wrap section.widget.widget_sp_image {
+  padding: 2rem 0;
 }
 .single-product .site-inner .content-sidebar-wrap .woo-image {
   padding-left: 0;
